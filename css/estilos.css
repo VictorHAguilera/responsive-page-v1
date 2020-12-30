@@ -1,0 +1,106 @@
+* {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.contenedor {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.header {
+  background: #000;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.menu {
+  background: #f9ed69;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100px;
+  align-items: center;
+}
+.logotipo {
+  background: #f08a5d;
+  flex: 1 1 auto;
+  height: 30px;
+}
+.nav {
+  background: #f08a5d;
+  flex: 5 1 auto;
+  height: 30px;
+}
+.social {
+  background: #f08a5d;
+  flex: 1 1 auto;
+  height: 30px;
+}
+.texto-principal {
+  background: #6a2c70;
+}
+h1 {
+  background: #b83b5e;
+}
+.seccion {
+  background: #000;
+  display: flex;
+}
+.articulos {
+  background: #364f6b;
+  flex: 2 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+.article {
+  background: #3fc1c9;
+  flex: 1 1 40%;
+}
+.navegacion {
+  background: #ffc7c7;
+  flex: 1 1 100%;
+}
+.aside {
+  background: #e84545;
+  flex: 1 1 auto;
+}
+.publicidad {
+  background: #6639a6;
+}
+.footer {
+  background: #000;
+  display: flex;
+  justify-content: center;
+}
+.pie {
+  background: #ffd460;
+  width: 300px;
+}
+
+/* aqui con los media queries voy diagramando la pagina en diferentes dimensiones de pantalla */
+@media all and (max-width: 800px) {
+  .seccion {
+    flex-direction: column;
+  }
+  .menu {
+    flex-direction: column;
+    height: auto;
+  }
+  .aside {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .articulos {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .aside {
+    flex-direction: column;
+  }
+}
